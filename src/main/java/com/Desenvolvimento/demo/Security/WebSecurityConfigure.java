@@ -34,7 +34,7 @@ public class WebSecurityConfigure {
     {
         http
                 .csrf().disable()
-                .authorizeHttpRequests().anyRequest().hasRole("USER")
+                .authorizeHttpRequests().anyRequest().authenticated()
                 .and()
                 .formLogin()
                 .defaultSuccessUrl("/index", true)
