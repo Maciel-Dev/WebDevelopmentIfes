@@ -37,9 +37,9 @@
 						Faça o Login para Continuar
 					</span>
 					
-					<form th:action="@{/login}" method="post">
+					<form action="/loginCustom" method="post">
 						<div class="wrap-input100 validate-input" data-validate = "Valid email is required: ex@abc.xyz">
-							<input class="input100" type="text" name="username">
+							<input class="input100" type="text" name="username" th:name = "username">
 							<span class="focus-input100"></span>
 							<span class="label-input100">Username</span>
 						</div>
@@ -67,10 +67,7 @@
 							</div>
 						</div>
 
-
-						<div class="container-login100-form-btn">
-							<input type="submit" value="Login" class="login100-form-btn">
-						</div>
+						<button type="submit">Entrar</button>
 
 						<div class="text-center p-t-46 p-b-20">
 							<span class="txt2">

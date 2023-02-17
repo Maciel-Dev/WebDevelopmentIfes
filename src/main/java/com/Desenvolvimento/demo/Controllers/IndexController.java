@@ -17,11 +17,5 @@ public class IndexController {
         return "teste";
     }
 
-    @GetMapping("/loginProp")
-    public String login()
-    {
-        return "login";
-    }
-
 
 }
